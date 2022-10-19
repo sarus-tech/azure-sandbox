@@ -32,7 +32,7 @@ echo 'Authenticating to the container registry...'
 docker login registry.gitlab.com/sarus-tech -u $SARUS_RELEASES_USERNAME $SARUS_RELEASES_PASSWORD
 
 echo 'Pulling docker images...'
-docker-compose pull
+docker compose pull
 
 echo 'Launching Sarus'
-docker-compose up -d
+docker compose up -d
